@@ -13,11 +13,11 @@
     <!-- ================= NAVBAR ================= -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
         <div class="container" >
-            <a class="" href="#">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                 <div class="logo-icon"><i class="fa-solid fa-dumbbell"></i></div>
                 <div class="lh-1">
-                    <span class="">FitFlow</span>
-                    <small class=" style="font-size: 0.6rem; letter-spacing: 1px;">PREMIUM</small>
+                    <span class="fw-bold d-block">FitFlow</span>
+                    <small class="text-purple fw-bold" style="font-size: 0.6rem; letter-spacing: 1px;">PREMIUM</small>
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -25,23 +25,23 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/workouts.html">Workouts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pages/nutrition.html">Nutrition</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Community</a>
+                        <a class="nav-link" href="pages/contact.html">Workouts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community-section">Community</a>
                     </li>
                 </ul>
                 <div class="d-flex align-items-center gap-4">
-                    <a href="#" class="">Login</a>
-                    <a href="#" class="">Join Elite</a>
+                    <a href="#" class="text-white text-decoration-none fw-semibold fs-6">Login</a>
+                    <a href="#" class="btn btn-primary btn-gradient rounded-pill px-4 shadow-lg">Join Elite</a>
                 </div>
             </div>
         </div>
@@ -53,54 +53,54 @@
                 <div class="row align-items-center">
                     
                 
-                    <div class="col-lg-6 mb-5 mb-lg-0 ">
+                    <div class="col-lg-6 mb-5 mb-lg-0 content-column">
                         
                         
-                        <div class="badge-pill mb-4 ">
+                        <div class="badge-pill mb-4 d-inline-flex align-items-center gap-2">
                             <i class="fa-solid fa-star text-warning"></i>
                             <span>Trusted by 100K+ Elite Athletes</span>
                         </div>
 
                     
-                        <h1 class="display-3 ">
+                        <h1 class="display-3 fw-bold mb-3 lh-sm">
                             Transform Your <br>
                             <span class="text-gradient">Body & Mind</span> <br>
                             with FitFlow
                         </h1>
 
-                        <p class="lead ">
+                        <p class="lead text-secondary mb-5 pe-lg-5">
                             Experience the future of fitness with AI-powered personalized workouts, elite nutrition coaching, and a premium community.
                         </p>
 
                     
-                        <div class="d-flex ">
+                        <div class="d-flex gap-3 mb-5 flex-wrap">
                             <a href="pages/workouts.html" class="btn btn-primary btn-lg btn-gradient px-4 py-2 rounded-3 d-flex align-items-center gap-2">
                                 Start Your Journey <i class="fa-solid fa-arrow-right"></i>
                             </a>
-                            <a href="#" class="">Explore Programs</a>
+                            <a href="#" class="btn btn-outline-secondary btn-lg px-4 py-2 rounded-3 text-white">Explore Programs</a>
                         </div>
 
-                        <div class="">
-                            <div class="">
+                        <div class="d-flex gap-4 border-start border-secondary border-opacity-25 ps-0">
+                            <div class="stat-item pe-4 border-end border-secondary border-opacity-25">
                                 <h3 class="fw-bold mb-0 text-purple">500K+</h3>
                                 <small class="text-secondary">Active Members</small>
                             </div>
-                            <div class="">
+                            <div class="stat-item pe-4 border-end border-secondary border-opacity-25">
                                 <h3 class="fw-bold mb-0 text-purple">98%</h3>
-                                <small class="">Success Rate</small>
+                                <small class="text-secondary">Success Rate</small>
                             </div>
                             <div class="stat-item">
-                                <h3 class=""><i class="fa-solid fa-star me-1"></i>4.9</h3>
+                                <h3 class="fw-bold mb-0 text-warning"><i class="fa-solid fa-star me-1"></i>4.9</h3>
                                 <small class="text-secondary">Premium Rating</small>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 position-relative">
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                            <img src="./imges/image_hero.avif" 
                                 alt="Gym Interior" class="img-fluid rounded-5 shadow-lg main-img">
                             <div class="glass-card p-3 rounded-4 d-flex align-items-center gap-3">
-                                <div class="">
+                                <div class="icon-box bg-purple rounded-3 d-flex align-items-center justify-content-center">
                                     <i class="fa-solid fa-fire text-white"></i>
                                 </div>
                                 <div>
@@ -126,7 +126,7 @@
                 <div class="badge-pill mb-3 d-inline-block">
                     <i class="fa-solid fa-crown text-warning me-2"></i>Premium Programs
                 </div>
-                <h2 class="">
+                <h2 class="display-5 fw-bold mb-3">
                     Elite Training <span class="text-gradient">Experiences</span>
                 </h2>
                 <p class="text-secondary mx-auto" style="max-width: 600px;">
@@ -141,8 +141,8 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="program-card h-100 rounded-4 overflow-hidden position-relative">
                         <!-- Image Area -->
-                        <div class="">
-                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Strength" class="w-100 object-fit-cover" style="height: 250px;">
+                        <div class="card-image-wrapper position-relative">
+                            <img src="imges/program1_image.avif" alt="Strength" class="w-100 object-fit-cover" style="height: 250px;">
                             
                             <!-- Top Badges -->
                             <span class="badge bg-dark bg-opacity-75 backdrop-blur position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill small">Most Popular</span>
@@ -164,7 +164,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="program-card h-100 rounded-4 overflow-hidden position-relative">
                         <div class="card-image-wrapper position-relative">
-                            <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="HIIT" class="w-100 object-fit-cover" style="height: 250px;">
+                            <img src="imges/program2_image.avif" alt="HIIT" class="w-100 object-fit-cover" style="height: 250px;">
                             
                             <span class="badge bg-dark bg-opacity-75 backdrop-blur position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill small">New</span>
                             <div class="icon-badge bg-orange position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center rounded-3 shadow">
@@ -174,7 +174,7 @@
 
                         <div class="card-content p-4 bg-card-dark">
                             <h4 class="fw-bold mb-3">HIIT Performance</h4>
-                            <p class="">High-intensity metabolic conditioning designed by world-class trainers for maximum results.</p>
+                            <p class="text-secondary mb-4 small">High-intensity metabolic conditioning designed by world-class trainers for maximum results.</p>
                             <a href="#" class="btn btn-orange w-100 py-2 rounded-3 fw-semibold text-white">Explore Program</a>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="program-card h-100 rounded-4 overflow-hidden position-relative">
                         <div class="card-image-wrapper position-relative">
-                            <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yoga" class="w-100 object-fit-cover" style="height: 250px;">
+                            <img src="imges/program3_image.avif" alt="Yoga" class="w-100 object-fit-cover" style="height: 250px;">
                             
                             <span class="badge bg-dark bg-opacity-75 backdrop-blur position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill small">Premium</span>
                             <div class="icon-badge bg-teal position-absolute top-0 end-0 m-3 d-flex align-items-center justify-content-center rounded-3 shadow">
@@ -192,9 +192,9 @@
                             </div>
                         </div>
 
-                        <div class="card-content ">
+                        <div class="card-content p-4 bg-card-dark">
                             <h4 class="fw-bold mb-3">Mind & Body Flow</h4>
-                            <p class="">Luxury wellness combining yoga, meditation, and mobility for holistic transformation.</p>
+                            <p class="text-secondary mb-4 small">Luxury wellness combining yoga, meditation, and mobility for holistic transformation.</p>
                             <a href="#" class="btn btn-teal w-100 py-2 rounded-3 fw-semibold text-white">Explore Program</a>
                         </div>
                     </div>
@@ -203,6 +203,81 @@
             </div>
         </div>
     </section>
+
+    <!-- ================= COMMUNITY SECTION ================= -->
+    <section class="community-section py-5 position-relative text-center" id="community-section">
+        <!-- Background Glow Center (Optional subtle effect) -->
+        <div class="center-glow"></div>
+
+        <div class="container py-4 position-relative z-2">
+            
+            <!-- Header Text -->
+            <div class="mb-5">
+                <h2 class="display-5 fw-bold mb-3">
+                    Join the <span class="text-gradient-pink">Elite Community</span>
+                </h2>
+                <p class="text-secondary mx-auto" style="max-width: 700px;">
+                    Track every achievement, celebrate every milestone, and transform your life alongside thousands of dedicated athletes pursuing excellence.
+                </p>
+            </div>
+
+            <!-- Stats Cards Grid -->
+            <div class="row justify-content-center g-4 mb-5">
+                
+                <!-- Card 1: Purple Trophy -->
+                <div class="col-md-4">
+                    <div class="stat-card p-5 rounded-4 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <div class="icon-glow-sq bg-glow-purple mb-4">
+                            <i class="fa-solid fa-trophy text-white fs-4"></i>
+                        </div>
+                        <h3 class="fw-bold display-6 mb-1">500K+</h3>
+                        <p class="text-secondary mb-0 small">Goals Crushed</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Pink Ribbon -->
+                <div class="col-md-4">
+                    <div class="stat-card p-5 rounded-4 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <div class="icon-glow-sq bg-glow-pink mb-4">
+                            <i class="fa-solid fa-medal text-white fs-4"></i>
+                        </div>
+                        <h3 class="fw-bold display-6 mb-1">98%</h3>
+                        <p class="text-secondary mb-0 small">Success Rate</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Orange Bolt -->
+                <div class="col-md-4">
+                    <div class="stat-card p-5 rounded-4 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <div class="icon-glow-sq bg-glow-orange mb-4">
+                            <i class="fa-solid fa-bolt text-white fs-4"></i>
+                        </div>
+                        <h3 class="fw-bold display-6 mb-1">2M+</h3>
+                        <p class="text-secondary mb-0 small">Workouts Completed</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="mt-5">
+                <a href="#" class="btn btn-primary btn-gradient-pink px-5 py-3 rounded-pill fw-bold shadow-lg mb-3">
+                    Start Your Transformation <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+                <p class="text-secondary small opacity-75">No credit card required • 14-day premium trial</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer-section py-4 mt-auto border-top border-white border-opacity-10">
+        <div class="container text-center">
+            <small class="text-secondary">
+                &copy; 2025 FitFlow. All rights reserved. <span class="text-purple">Premium Fitness Experience</span>
+            </small>
+        </div>
+    </footer>
 
   
 

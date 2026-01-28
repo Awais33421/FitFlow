@@ -1,0 +1,307 @@
+/* --- Global Settings --- */
+body {
+    background-color: #050505; 
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* --- Navbar (FIXED) --- */
+.navbar {
+    background-color: rgba(5, 5, 5, 0.85); /* Dark background */
+    backdrop-filter: blur(10px); /* Glass blur effect */
+    padding: 15px 0;
+    z-index: 1050; /* Ensures it stays ON TOP of everything */
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(135deg, #b026ff, #7928ca);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #a0a0a0 !important; /* Grey by default */
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff !important; /* White on hover/active */
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 100px; /* IMPORTANT: Pushes content down so Navbar doesn't cover it */
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Buttons & Gradients --- */
+.btn-gradient {
+    background: linear-gradient(90deg, #b026ff 0%, #d946ef 100%);
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(176, 38, 255, 0.4);
+    color: white;
+}
+
+.btn-outline-secondary {
+    border-color: #333;
+    background-color: rgba(255,255,255,0.05);
+}
+
+.text-purple { color: #c084fc; }
+
+.text-gradient {
+    background: linear-gradient(90deg, #c084fc, #e879f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- Image & Badge Styles --- */
+.badge-pill {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    color: #ddd;
+}
+
+.image-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.main-img {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+    position: absolute;
+    bottom: 40px;
+    left: -40px;
+    background: rgba(20, 20, 20, 0.7);
+    backdrop-filter: blur(15px); /* Strong blur for glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 200px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.purple-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background: radial-gradient(circle, rgba(176, 38, 255, 0.35) 0%, rgba(5, 5, 5, 0) 70%);
+    z-index: 1;
+    filter: blur(60px);
+}
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+}
+
+.bg-purple { background-color: #b026ff; }
+
+/* Mobile Tweaks */
+@media (max-width: 991px) {
+    .glass-card {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+    .hero-section {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .d-flex.gap-4.border-start {
+        border-left: none !important;
+        justify-content: center;
+    }
+    /* Fix alignment of buttons on mobile menu */
+    .d-flex.align-items-center.gap-4 {
+        margin-top: 15px;
+        justify-content: center;
+    }
+}
+
+
+
+
+/* --- Programs Section Styles --- */
+
+/* Dark Background for Cards (Lighter than body) */
+.bg-card-dark {
+    background-color: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: none; /* Seamless look with image */
+}
+
+/* Card Hover Effect */
+.program-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Image styling */
+.card-image-wrapper img {
+    transition: transform 0.5s ease;
+}
+
+.program-card:hover .card-image-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Floating Icon Badge Square */
+.icon-badge {
+    width: 40px;
+    height: 40px;
+}
+
+/* Glass effect for text badges */
+.backdrop-blur {
+    backdrop-filter: blur(4px);
+}
+
+/* --- Color Variants --- */
+
+/* 1. Orange/Red (Fire) */
+.bg-orange {
+    background: linear-gradient(135deg, #ff4d00, #ff0000);
+}
+
+.btn-orange {
+    background: linear-gradient(90deg, #ff4d00, #ff0000);
+    border: none;
+    transition: transform 0.2s;
+}
+
+.btn-orange:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 77, 0, 0.4);
+    color: white;
+}
+
+/* 2. Teal/Green (Bolt) */
+.bg-teal {
+    background: linear-gradient(135deg, #00b09b, #11998e); /* Teal gradient */
+}
+
+.btn-teal {
+    background: linear-gradient(90deg, #11998e, #00b09b);
+    border: none;
+    transition: transform 0.2s;
+}
+
+.btn-teal:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(17, 153, 142, 0.4);
+    color: white;
+}
+
+/* 3. Purple (Reusing existing, but specific class for icon bg) */
+.bg-purple {
+    background: linear-gradient(135deg, #b026ff, #7928ca);
+}
+/* --- Community Section Styles --- */
+
+/* Text Gradient for "Elite Community" (Pink/Purple) */
+.text-gradient-pink {
+    background: linear-gradient(90deg, #ff4d9e, #b026ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Card Styling */
+.stat-card {
+    background-color: #0b0b0b; /* Very Dark Grey, slightly lighter than body */
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle border */
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- Glowing Icons --- */
+.icon-glow-sq {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Soft glow around the box */
+    box-shadow: 0 0 25px rgba(0,0,0,0.5); 
+}
+
+/* Specific Colors for Icons */
+.bg-glow-purple {
+    background: linear-gradient(135deg, #b026ff, #7928ca);
+    box-shadow: 0 0 30px rgba(176, 38, 255, 0.4); /* Purple Glow */
+}
+
+.bg-glow-pink {
+    background: linear-gradient(135deg, #ff00cc, #ff3366);
+    box-shadow: 0 0 30px rgba(255, 0, 204, 0.4); /* Pink Glow */
+}
+
+.bg-glow-orange {
+    background: linear-gradient(135deg, #ff4d00, #ff0000);
+    box-shadow: 0 0 30px rgba(255, 77, 0, 0.4); /* Orange Glow */
+}
+
+/* --- CTA Button (Pink Gradient) --- */
+.btn-gradient-pink {
+    background: linear-gradient(90deg, #d946ef, #e11d48);
+    border: none;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-gradient-pink:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(217, 70, 239, 0.5);
+    color: white;
+}
+
+/* --- Footer --- */
+.footer-section {
+    background-color: #050505;
+}
+
+/* Optional: Center ambient glow behind the text */
+.center-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(176, 38, 255, 0.15) 0%, rgba(5, 5, 5, 0) 70%);
+    z-index: 0;
+    pointer-events: none;
+}
