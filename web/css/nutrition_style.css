@@ -1,0 +1,78 @@
+/* --- Nutrition Page Styles --- */
+
+/* 1. Green Text Gradient */
+.text-gradient-green {
+    background: linear-gradient(90deg, #00f260, #0575e6); /* Bright Green to Blue-Green */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 2. Text & Icon Colors */
+.text-teal {
+    color: #00f260;
+}
+
+.bg-teal-solid {
+    background-color: #009966;
+}
+
+/* 3. Green Ambient Glow behind image */
+.green-glow-bg {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(0, 242, 96, 0.25) 0%, rgba(5, 5, 5, 0) 70%);
+    z-index: 0;
+    filter: blur(50px);
+}
+
+/* 4. Floating Macros Card */
+.floating-macro-card {
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    background: rgba(15, 15, 15, 0.85); /* Dark semi-transparent */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 180px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.icon-box-sm {
+    width: 40px;
+    height: 40px;
+}
+
+/* 5. Feature Cards (Grid) */
+.nutrition-feature-card {
+    background-color: #0b0b0b; /* Dark Card Background */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.nutrition-feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 242, 96, 0.3) !important; /* Green border on hover */
+}
+
+/* Icon box inside feature cards */
+.nutrition-feature-card .icon-box {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background-color: rgba(0, 242, 96, 0.1); /* Very subtle green bg */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustment for floating card */
+@media (max-width: 991px) {
+    .floating-macro-card {
+        right: 50%;
+        transform: translateX(50%);
+        top: 20px;
+    }
+}
